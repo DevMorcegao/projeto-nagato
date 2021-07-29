@@ -1,0 +1,13 @@
+.tooltip {
+  position: absolute;
+  z-index: 600;
+  background: rgba(6, 6, 10, 0.8);
+  box-shadow: 0 0 0 2px $bege, 0 0 0 6px rgba(6, 6, 10, 0.8);
+  padding: 0.5rem;
+  color: $branco;
+  @include tipo-3(12);
+  max-width: 170px;
+  border-radius: 2px;
+  top: 0px;
+  left: 0px;
+}

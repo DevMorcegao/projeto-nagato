@@ -1,0 +1,60 @@
+[data-menu="button"] {
+  display: none;
+}
+
+.js [data-menu="button"] {
+  @include d(s) {
+    @include tipo-2(12);
+    display: flex;
+    background: $bege;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    color: $preto-azulado;
+    cursor: pointer;
+    margin: 0px;
+    align-items: center;
+    position: relative;
+    z-index: 300;
+    box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.2);
+    &.active {
+      border-radius: 4px 4px 0 0;
+      box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.2);
+      color: $vermelho;
+    }
+    &::before {
+      margin-right: 4px;
+      content: "";
+      display: inline-block;
+      height: 2px;
+      width: 12px;
+      background: $preto-azulado;
+      box-shadow: 0 4px $preto-azulado, 0 -4px $preto-azulado;
+      transition: transform 0.3s;
+    }
+    &.active::before {
+      transform: rotate(90deg);
+      background: $vermelho;
+      box-shadow: 0 4px $vermelho, 0 -4px $vermelho;
+    }
+  }
+}
+
+.js [data-menu="list"] {
+  @include d(s) {
+    display: none;
+    position: absolute;
+    background: $menu-mobile;
+    width: 93.9px;
+    z-index: 400;
+    top: 1;
+    padding: 12px 0 12px 0;
+    margin-top: -1px;
+    box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.2);
+    &.active {
+      display: block;
+      animation: show-down 0.3s forwards;
+      border-radius: 0 0 4px 4px;
+    }
+  }
+}

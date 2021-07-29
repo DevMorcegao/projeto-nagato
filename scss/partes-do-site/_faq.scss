@@ -1,0 +1,26 @@
+.faq-lista {
+  grid-column: 2 / 4;
+}
+
+.faq-lista dt {
+  @include tipo-2(16);
+  text-transform: none;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  color: $vermelho;
+}
+
+.faq-lista dt::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 10px;
+  margin-right: 12px;
+  background: $bege;
+}
+
+.faq-lista dd {
+  @include tipo-3(16);
+  margin-bottom: 2rem;
+  margin-left: 32px;
+}

@@ -1,0 +1,37 @@
+body {
+  background: $branco;
+  color: $preto-azulado;
+  -webkit-font-smoothing: antialiased;
+  display: grid;
+  grid-template-columns: 1fr 120px minmax(300px, 800px) 1fr;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+p {
+  @include tipo-3(16);
+}
+
+.grid-section {
+  grid-column: 2 / 4;
+  width: 100%;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 90px 300px 1fr;
+  grid-gap: 20px;
+  margin-bottom: 8rem;
+  padding: 24px;
+}
+
+.titulo {
+  @include tipo-1(96);
+  margin-bottom: 2rem;
+  grid-column: 1 / 4;
+}

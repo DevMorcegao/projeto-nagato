@@ -1,0 +1,27 @@
+// Gerais
+
+@import "./geral/reset";
+@import "./geral/fontes";
+@import "./geral/variaveis-e-mixins";
+@import "./geral/geral";
+
+// Partes do site
+
+@import "./partes-do-site/menu";
+@import "./partes-do-site/historia";
+@import "./partes-do-site/equipe";
+@import "./partes-do-site/faq";
+@import "./partes-do-site/contato";
+@import "./partes-do-site/footer";
+
+// Responsivo
+
+@import "./responsivo/responsivo";
+@import "./responsivo/menu-mobile";
+
+// Animações / Eventos
+
+@import "./events/anima-scroll";
+@import "./events/accordion";
+@import "./events/funcionamento";
+@import "./events/tooltip";

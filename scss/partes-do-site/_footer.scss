@@ -1,0 +1,38 @@
+.footer {
+  grid-column: 1/5;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background: $menu-e-footer;
+}
+
+.footer p {
+  @include tipo-2(16);
+  padding: 20px;
+  margin: 8px 0px 8px 44px;
+}
+
+.redes-sociais ul {
+  margin: 0 35px 0 0;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.redes-sociais ul li a {
+  border: 2px solid $preto-azulado;
+  display: block;
+  padding: 10px;
+  margin-right: 20px;
+  transition: 0.1s;
+}
+
+.redes-sociais ul li a:hover {
+  border-color: $bege;
+}
+
+.redes-sociais ul li a img {
+  width: 28px;
+  height: 28px;
+}

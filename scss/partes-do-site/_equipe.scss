@@ -1,0 +1,30 @@
+.equipe-grid {
+  grid-column: 2 / 4;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.equipe-grid h3 {
+  @include tipo-2(16);
+  color: $vermelho;
+  margin-bottom: 0.75rem;
+  margin-top: 1rem;
+}
+
+.equipe-grid h3::before {
+  content: "";
+  display: inline-block;
+  width: 40px;
+  height: 10px;
+  margin-right: 12px;
+  background: $bege;
+}
+
+.equipe-grid li {
+  @include tipo-3(16);
+  line-height: 1.75rem;
+  list-style-type: disc;
+  position: relative;
+  left: 24px;
+}

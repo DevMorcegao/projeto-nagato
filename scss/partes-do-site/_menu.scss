@@ -1,0 +1,33 @@
+.menu {
+  grid-column: 1 / 5;
+  margin-bottom: 8rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background: $menu-e-footer;
+}
+
+.menu-logo a img {
+  margin: 6px 64px;
+}
+
+.menu-nav ul {
+  margin: 0 24px 0 0;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.menu-nav a {
+  @include tipo-2(16);
+  display: block;
+  padding: 10px;
+  margin-right: 20px;
+  color: $preto-azulado;
+  transition: 0.1s;
+}
+
+.menu-nav a:hover {
+  color: $vermelho;
+}

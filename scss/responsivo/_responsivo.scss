@@ -1,0 +1,153 @@
+// Variáveis do responsivo
+
+$m-device: 751px; //Breakpoint para dispositivos "médios"
+$s-device: 751px; //Breakpoint para dispositivos "pequenos"
+
+// Box-sizing
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box; // Serve por exemplo para manter o width definido, sem ocorrer somas de padding etc...
+}
+
+// Mixins de media-queries
+
+@mixin d($size) {
+  @if $size == m {
+    @media screen and (min-width: #{$m-device}) and (max-width: 924px) {
+      @content;
+    }
+  } @else if $size == s {
+    @media screen and (max-width: #{$m-device}) {
+      @content;
+    }
+  }
+}
+
+// Responsivo
+
+@include d(m) {
+  .menu {
+    margin-bottom: 4rem;
+  }
+  .menu-logo {
+    margin: 0 auto;
+    width: 100%;
+  }
+  .menu-logo a img,
+  .menu-nav {
+    margin: 0 auto;
+  }
+  .menu-nav ul {
+    margin: 0;
+  }
+}
+
+@include d(s) {
+  body {
+    grid-template-columns: 1fr;
+  }
+  .menu,
+  .grid-section,
+  .footer {
+    grid-column: 1;
+  }
+  .grid-section {
+    grid-template-columns: 100px 1fr;
+    grid-gap: 10px;
+    margin-top: 0rem;
+    margin-bottom: 2rem;
+  }
+  .grid-section .titulo {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    line-height: 1;
+  }
+  .faq-lista dt {
+    margin-top: 1rem;
+    max-width: 280px;
+  }
+  .menu {
+    margin-bottom: 4rem;
+  }
+  .menu-logo {
+    margin: 0 auto;
+  }
+  .menu-nav {
+    margin: 16px auto;
+  }
+  .menu-nav ul {
+    margin: 0;
+  }
+  .menu-nav a {
+    @include tipo-2(12);
+    margin-right: 10px;
+  }
+  .historia h2 {
+    @include tipo-2(14);
+  }
+  .historia h2::before {
+    margin-right: 8px;
+  }
+  .historia p {
+    @include tipo-3(14);
+  }
+  .historia-lista {
+    grid-column: 1;
+  }
+  .faq-lista,
+  .dados,
+  .mapa,
+  .equipe-grid {
+    grid-column: 1 / 4;
+  }
+  .equipe-grid {
+    grid-template-columns: none;
+    grid-gap: 2rem;
+  }
+  .equipe-grid h3 {
+    max-width: 300px;
+  }
+  .faq-lista dd {
+    margin-bottom: 3rem;
+  }
+  [data-anime="accordion"] dt::after {
+    margin-left: 4px !important;
+  }
+  [data-semana]::after {
+    width: 10px !important;
+    height: 10px !important;
+  }
+  .dados li {
+    @include tipo-3(12);
+  }
+  .citacao {
+    top: 0px;
+    left: -24px;
+  }
+  .citacao p {
+    @include tipo-3(12);
+  }
+  .dados {
+    margin-top: 1rem;
+  }
+  blockquote {
+    width: 250px;
+  }
+  .footer {
+    margin-top: 2rem;
+    justify-content: center;
+  }
+  .footer p {
+    padding: 16px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .redes-sociais ul {
+    margin: 0 auto;
+  }
+  .mapa {
+    max-width: 300px;
+  }
+}

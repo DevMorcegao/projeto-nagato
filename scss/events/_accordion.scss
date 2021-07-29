@@ -1,0 +1,29 @@
+.js [data-anime="accordion"] dd {
+  display: none;
+}
+
+[data-anime="accordion"] dt::after {
+  content: "⬎";
+  margin-left: 12px;
+  cursor: pointer;
+}
+
+[data-anime="accordion"] dt.ativo::after {
+  content: "⬏";
+}
+
+[data-anime="accordion"] dd.ativo {
+  display: block;
+  animation: slideDown 0.5s forwards;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    max-height: 0;
+  }
+  to {
+    max-height: 300px;
+    opacity: 1;
+  }
+}

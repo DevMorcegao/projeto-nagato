@@ -1,0 +1,59 @@
+// Cores
+
+$preto-azulado: #06060a;
+$branco: #fff;
+$menu-e-footer: linear-gradient(360deg, #babcaf 0%, #f0f2e1 97.51%);
+$menu-mobile: linear-gradient(360deg, #f0f2e1 0%, #babcaf 97.51%);
+$vermelho: #b8050c;
+$bege: #babcaf;
+$verde: #33ff44;
+
+// Fontes
+
+$fonte-titulos: "Nikkyou Sans", serif;
+$fonte-subtitulos: "Noto Serif JP Bold", serif;
+$fonte-paragrafos: "Noto Sans JP Regular", sans-serif;
+
+@function rem($pixel, $contexto: 16) {
+  @return $pixel / $contexto + rem;
+}
+
+@mixin tipo-1($size) {
+  font-family: $fonte-titulos;
+  text-transform: uppercase;
+  @if $size == 96 {
+    font-size: rem(96);
+    line-height: rem(96);
+  }
+}
+
+@mixin tipo-2($size) {
+  font-family: $fonte-subtitulos;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.1rem;
+  @if $size == 16 {
+    font-size: rem(16);
+    line-height: rem(24);
+  } @else if $size == 14 {
+    font-size: rem(14);
+    line-height: rem(21);
+  } @else if $size == 12 {
+    font-size: rem(12);
+    line-height: rem(18);
+  }
+}
+
+@mixin tipo-3($size) {
+  font-family: $fonte-paragrafos;
+  @if $size == 16 {
+    font-size: rem(16);
+    line-height: rem(24);
+  } @else if $size == 14 {
+    font-size: rem(14);
+    line-height: rem(21);
+  } @else if $size == 12 {
+    font-size: rem(12);
+    line-height: rem(18);
+  }
+}

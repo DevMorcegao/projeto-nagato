@@ -1,0 +1,51 @@
+.historia h2 {
+  @include tipo-2(16);
+  color: $vermelho;
+  margin-bottom: 0.75rem;
+}
+
+.historia h2::before {
+  content: "";
+  display: inline-block;
+  width: 40px;
+  height: 10px;
+  margin-right: 12px;
+  background: $bege;
+}
+
+.historia p {
+  @include tipo-3(16);
+  margin-bottom: 0.75rem;
+}
+
+.historia-lista {
+  height: 370px;
+  overflow-y: scroll;
+  grid-column: 2;
+}
+
+.historia-lista li {
+  cursor: pointer;
+}
+
+.historia-lista::-webkit-scrollbar {
+  width: 18px;
+}
+
+.historia-lista::-webkit-scrollbar-thumb {
+  background: $bege;
+  border-left: 4px solid $branco;
+  border-right: 4px solid $branco;
+}
+
+.historia-lista::-webkit-scrollbar-track {
+  background: $branco;
+}
+
+.historia-descricao {
+  grid-column: 3;
+}
+
+.historia-descricao section {
+  margin-bottom: 4rem;
+}

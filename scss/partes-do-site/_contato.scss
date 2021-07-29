@@ -1,0 +1,46 @@
+.mapa {
+  grid-column: 2;
+}
+
+.dados {
+  grid-column: 3;
+}
+
+.citacao {
+  grid-column: 3 / 4;
+  text-align: center;
+  grid-template-columns: 200px;
+  position: relative;
+  top: -175px;
+  right: -321px;
+  width: 250px;
+  padding: 0px;
+  margin: 17px 0 17px 0;
+}
+
+.citacao p {
+  @include tipo-3(14);
+  margin-bottom: 0.4rem;
+}
+
+.citacao cite {
+  @include tipo-2(14);
+}
+
+.dados li {
+  @include tipo-3(16);
+  margin-bottom: 0.75rem;
+}
+
+.dados li::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 10px;
+  margin-right: 12px;
+  background: $bege;
+}
+
+.grid-section.contato {
+  margin-bottom: 0rem !important;
+}
