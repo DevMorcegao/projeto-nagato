@@ -1,10 +1,10 @@
 import ScrollSuave from "./modules/scroll-suave.js";
 import Accordion from "./modules/accordion.js";
-import initAnimacaoScroll from "./modules/anima-scroll.js";
 import TabNav from "./modules/tabnav.js";
-import initFuncionamento from "./modules/funcionamento.js";
-import initTooltip from "./modules/tooltip.js";
+import Tooltip from "./modules/tooltip.js";
+import initAnimacaoScroll from "./modules/anima-scroll.js";
 import initMenuMobile from "./modules/menu-mobile.js";
+import initFuncionamento from "./modules/funcionamento.js";
 
 const scrollSuave = new ScrollSuave('[data-menu="suave"] a[href^="#"]');
 scrollSuave.init();
@@ -18,7 +18,9 @@ const tabNav = new TabNav(
 );
 tabNav.init();
 
+const tooltip = new Tooltip("[data-tooltip]");
+tooltip.init();
+
 initAnimacaoScroll();
-initFuncionamento();
-initTooltip();
 initMenuMobile();
+initFuncionamento();
