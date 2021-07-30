@@ -641,7 +641,7 @@ p {
 .arrow-nav {
   display: flex;
   justify-content: space-around;
-  margin: 20px 0;
+  margin: 20px 0px;
   grid-column: 1 / -1; }
 
 .arrow-nav button {
