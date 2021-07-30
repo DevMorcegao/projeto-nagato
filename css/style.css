@@ -669,11 +669,11 @@ div#galeria.grid-section {
   color: #fff;
   width: 48px;
   height: 48px;
-  background-image: url("../../img/teste.png");
+  background: #06060a url("../img/arrow.svg") no-repeat center center;
   transition: 0.2s; }
 
 .arrow-nav button:hover {
-  background-image: url("../../img/teste2.png"); }
+  background: #b8050c url("../img/arrow.svg") no-repeat center center; }
 
 .arrow-nav button.prev {
   transform: rotate(-180deg); }
