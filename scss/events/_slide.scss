@@ -83,12 +83,12 @@ div#galeria.grid-section {
   color: $branco;
   width: 48px;
   height: 48px;
-  background: $preto-azulado url("../../arrow.svg") no-repeat center center;
-  transition: 0.3s;
+  background: $preto-azulado url("../../img/arrow.png") no-repeat center center;
+  transition: 0.2s;
 }
 
 .arrow-nav button:hover {
-  background: $vermelho url("../../arrow.svg") no-repeat center center;
+  background: $vermelho url("../../img/arrow.png") no-repeat center center;
 }
 
 .arrow-nav button.prev {
