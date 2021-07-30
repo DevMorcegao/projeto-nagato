@@ -11,8 +11,8 @@ $verde: #33ff44;
 // Fontes
 
 $fonte-titulos: "Nikkyou Sans", serif;
-$fonte-subtitulos: "Noto Serif JP Bold", serif;
-$fonte-paragrafos: "Noto Sans JP Regular", sans-serif;
+$fonte-subtitulos: "Noto Serif JP", serif;
+$fonte-paragrafos: "Noto Sans JP", sans-serif;
 
 @function rem($pixel, $contexto: 16) {
   @return $pixel / $contexto + rem;

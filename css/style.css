@@ -51,11 +51,11 @@ table {
   src: url("/fonts/NikkyouSans-mLKax.ttf") format("truetype"); }
 
 @font-face {
-  font-family: "Noto Sans JP Regular";
+  font-family: "Noto Sans JP";
   src: url("/fonts/NotoSansJP-Regular.otf") format("opentype"); }
 
 @font-face {
-  font-family: "Noto Serif JP Bold";
+  font-family: "Noto Serif JP";
   src: url("/fonts/NotoSerifJP-Bold.otf") format("opentype"); }
 
 body {
@@ -73,7 +73,7 @@ img {
   max-width: 100%; }
 
 p {
-  font-family: "Noto Sans JP Regular", sans-serif;
+  font-family: "Noto Sans JP", sans-serif;
   font-size: 1rem;
   line-height: 1.5rem; }
 
@@ -114,7 +114,7 @@ p {
   flex-wrap: wrap; }
 
 .menu-nav a {
-  font-family: "Noto Serif JP Bold", serif;
+  font-family: "Noto Serif JP", serif;
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: 0.1rem;
@@ -130,7 +130,7 @@ p {
   color: #b8050c; }
 
 .historia h2 {
-  font-family: "Noto Serif JP Bold", serif;
+  font-family: "Noto Serif JP", serif;
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: 0.1rem;
@@ -148,7 +148,7 @@ p {
   background: #babcaf; }
 
 .historia p {
-  font-family: "Noto Sans JP Regular", sans-serif;
+  font-family: "Noto Sans JP", sans-serif;
   font-size: 1rem;
   line-height: 1.5rem;
   margin-bottom: 0.75rem; }
@@ -185,7 +185,7 @@ p {
   grid-gap: 20px; }
 
 .equipe-grid h3 {
-  font-family: "Noto Serif JP Bold", serif;
+  font-family: "Noto Serif JP", serif;
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: 0.1rem;
@@ -204,7 +204,7 @@ p {
   background: #babcaf; }
 
 .equipe-grid li {
-  font-family: "Noto Sans JP Regular", sans-serif;
+  font-family: "Noto Sans JP", sans-serif;
   font-size: 1rem;
   line-height: 1.5rem;
   line-height: 1.75rem;
@@ -216,7 +216,7 @@ p {
   grid-column: 2 / 4; }
 
 .faq-lista dt {
-  font-family: "Noto Serif JP Bold", serif;
+  font-family: "Noto Serif JP", serif;
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: 0.1rem;
@@ -236,7 +236,7 @@ p {
   background: #babcaf; }
 
 .faq-lista dd {
-  font-family: "Noto Sans JP Regular", sans-serif;
+  font-family: "Noto Sans JP", sans-serif;
   font-size: 1rem;
   line-height: 1.5rem;
   margin-bottom: 2rem;
@@ -260,13 +260,13 @@ p {
   margin: 17px 0 17px 0; }
 
 .citacao p {
-  font-family: "Noto Sans JP Regular", sans-serif;
+  font-family: "Noto Sans JP", sans-serif;
   font-size: 0.875rem;
   line-height: 1.3125rem;
   margin-bottom: 0.4rem; }
 
 .citacao cite {
-  font-family: "Noto Serif JP Bold", serif;
+  font-family: "Noto Serif JP", serif;
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: 0.1rem;
@@ -274,7 +274,7 @@ p {
   line-height: 1.3125rem; }
 
 .dados li {
-  font-family: "Noto Sans JP Regular", sans-serif;
+  font-family: "Noto Sans JP", sans-serif;
   font-size: 1rem;
   line-height: 1.5rem;
   margin-bottom: 0.75rem; }
@@ -299,7 +299,7 @@ p {
   background: linear-gradient(360deg, #babcaf 0%, #f0f2e1 97.51%); }
 
 .footer p {
-  font-family: "Noto Serif JP Bold", serif;
+  font-family: "Noto Serif JP", serif;
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: 0.1rem;
@@ -373,7 +373,7 @@ p {
   .menu-nav ul {
     margin: 0; }
   .menu-nav a {
-    font-family: "Noto Serif JP Bold", serif;
+    font-family: "Noto Serif JP", serif;
     text-transform: uppercase;
     text-decoration: none;
     letter-spacing: 0.1rem;
@@ -381,7 +381,7 @@ p {
     line-height: 1.125rem;
     margin-right: 10px; }
   .historia h2 {
-    font-family: "Noto Serif JP Bold", serif;
+    font-family: "Noto Serif JP", serif;
     text-transform: uppercase;
     text-decoration: none;
     letter-spacing: 0.1rem;
@@ -390,7 +390,7 @@ p {
   .historia h2::before {
     margin-right: 8px; }
   .historia p {
-    font-family: "Noto Sans JP Regular", sans-serif;
+    font-family: "Noto Sans JP", sans-serif;
     font-size: 0.875rem;
     line-height: 1.3125rem; }
   .historia-lista {
@@ -413,14 +413,14 @@ p {
     width: 10px !important;
     height: 10px !important; }
   .dados li {
-    font-family: "Noto Sans JP Regular", sans-serif;
+    font-family: "Noto Sans JP", sans-serif;
     font-size: 0.75rem;
     line-height: 1.125rem; }
   .citacao {
     top: 0px;
     left: -24px; }
   .citacao p {
-    font-family: "Noto Sans JP Regular", sans-serif;
+    font-family: "Noto Sans JP", sans-serif;
     font-size: 0.75rem;
     line-height: 1.125rem; }
   .dados {
@@ -444,7 +444,7 @@ p {
 
 @media screen and (max-width: 751px) {
   .js [data-menu="button"] {
-    font-family: "Noto Serif JP Bold", serif;
+    font-family: "Noto Serif JP", serif;
     text-transform: uppercase;
     text-decoration: none;
     letter-spacing: 0.1rem;
@@ -576,7 +576,7 @@ p {
   box-shadow: 0 0 0 2px #babcaf, 0 0 0 6px rgba(6, 6, 10, 0.8);
   padding: 0.5rem;
   color: #fff;
-  font-family: "Noto Sans JP Regular", sans-serif;
+  font-family: "Noto Sans JP", sans-serif;
   font-size: 0.75rem;
   line-height: 1.125rem;
   max-width: 170px;
