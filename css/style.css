@@ -51,11 +51,11 @@ table {
   src: url("/fonts/NikkyouSans-mLKax.ttf") format("truetype"); }
 
 @font-face {
-  font-family: "Noto Sans JP";
+  font-family: "Noto Sans JP", sans-serif;
   src: url("/fonts/NotoSansJP-Regular.otf") format("opentype"); }
 
 @font-face {
-  font-family: "Noto Serif JP";
+  font-family: "Noto Serif JP", serif;
   src: url("/fonts/NotoSerifJP-Bold.otf") format("opentype"); }
 
 body {
