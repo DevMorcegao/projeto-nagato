@@ -2,6 +2,14 @@
   grid-column: 1 / -1;
 }
 
+div#galeria.grid-section {
+  margin-bottom: 0;
+  padding: 24px 24px 0 24px;
+}
+
+.grid-section.galeria.ativo {
+  padding: 0 24px 24px 24px;
+}
 /* Estilo essencial do slide */
 
 .slide-wrapper {
@@ -75,7 +83,12 @@
   color: $branco;
   width: 48px;
   height: 48px;
-  background: $preto-azulado url("../../img/arrow.svg") center center no-repeat;
+  background: $preto-azulado url("../../img/arrow.svg") no-repeat center center;
+  transition: 0.3s;
+}
+
+.arrow-nav button:hover {
+  background: $vermelho url("../../img/arrow.svg") no-repeat center center;
 }
 
 .arrow-nav button.prev {

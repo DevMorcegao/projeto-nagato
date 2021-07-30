@@ -150,4 +150,21 @@ $s-device: 751px; //Breakpoint para dispositivos "pequenos"
   .mapa {
     max-width: 300px;
   }
+  .slide li {
+    width: 70vw !important;
+    margin: 0px 5px !important;
+  }
+  .custom-controls li {
+    width: 40px !important;
+    height: 40px !important;
+  }
+
+  .arrow-nav {
+    margin: 10px 0px !important;
+  }
+
+  .arrow-nav button {
+    width: 32px !important;
+    height: 32px !important;
+  }
 }

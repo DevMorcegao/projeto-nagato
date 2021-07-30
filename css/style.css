@@ -438,7 +438,18 @@ p {
   .redes-sociais ul {
     margin: 0 auto; }
   .mapa {
-    max-width: 300px; } }
+    max-width: 300px; }
+  .slide li {
+    width: 70vw !important;
+    margin: 0px 5px !important; }
+  .custom-controls li {
+    width: 40px !important;
+    height: 40px !important; }
+  .arrow-nav {
+    margin: 10px 0px !important; }
+  .arrow-nav button {
+    width: 32px !important;
+    height: 32px !important; } }
 
 [data-menu="button"] {
   display: none; }
@@ -588,6 +599,13 @@ p {
 .galeria {
   grid-column: 1 / -1; }
 
+div#galeria.grid-section {
+  margin-bottom: 0;
+  padding: 24px 24px 0 24px; }
+
+.grid-section.galeria.ativo {
+  padding: 0 24px 24px 24px; }
+
 /* Estilo essencial do slide */
 .slide-wrapper {
   overflow: hidden;
@@ -651,7 +669,11 @@ p {
   color: #fff;
   width: 48px;
   height: 48px;
-  background: #06060a url("../../img/arrow.svg") center center no-repeat; }
+  background: #06060a url("../../img/arrow.svg") no-repeat center center;
+  transition: 0.3s; }
+
+.arrow-nav button:hover {
+  background: #b8050c url("../../img/arrow.svg") no-repeat center center; }
 
 .arrow-nav button.prev {
   transform: rotate(-180deg); }
