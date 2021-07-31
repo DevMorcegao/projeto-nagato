@@ -3,13 +3,20 @@
 }
 
 [data-anime="accordion"] dt::after {
-  content: "⬎";
+  content: "";
+  width: 12px;
+  height: 12px;
+  display: inline-block;
+  background: url("../img/arrow-red.svg") no-repeat center center;
   margin-left: 12px;
+  transform: rotate(90deg);
+  transition: transform 0.3s;
   cursor: pointer;
 }
 
 [data-anime="accordion"] dt.ativo::after {
-  content: "⬏";
+  content: "";
+  transform: rotate(-90deg);
 }
 
 [data-anime="accordion"] dd.ativo {
