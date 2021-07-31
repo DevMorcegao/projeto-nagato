@@ -53,6 +53,12 @@ $s-device: 751px; //Breakpoint para dispositivos "pequenos"
   .footer {
     grid-column: 1;
   }
+  .faq-lista,
+  .dados,
+  .mapa,
+  .equipe-grid {
+    grid-column: 1 / 4;
+  }
   .grid-section {
     grid-template-columns: 100px 1fr;
     grid-gap: 10px;
@@ -63,10 +69,6 @@ $s-device: 751px; //Breakpoint para dispositivos "pequenos"
     margin-bottom: 2rem;
     font-size: 2rem;
     line-height: 1;
-  }
-  .faq-lista dt {
-    margin-top: 1rem;
-    max-width: 280px;
   }
   .menu {
     margin-bottom: 4rem;
@@ -84,6 +86,9 @@ $s-device: 751px; //Breakpoint para dispositivos "pequenos"
     @include tipo-2(12);
     margin-right: 10px;
   }
+  .historia-lista {
+    grid-column: 1;
+  }
   .historia h2 {
     @include tipo-2(14);
   }
@@ -93,14 +98,21 @@ $s-device: 751px; //Breakpoint para dispositivos "pequenos"
   .historia p {
     @include tipo-3(14);
   }
-  .historia-lista {
-    grid-column: 1;
+  .custom-controls li {
+    width: 40px !important;
+    height: 40px !important;
   }
-  .faq-lista,
-  .dados,
-  .mapa,
-  .equipe-grid {
-    grid-column: 1 / 4;
+  .slide li {
+    width: 70vw !important;
+    margin: 0px 5px !important;
+  }
+  .arrow-nav {
+    margin: 10px 0px !important;
+  }
+
+  .arrow-nav button {
+    width: 32px !important;
+    height: 32px !important;
   }
   .equipe-grid {
     grid-template-columns: none;
@@ -109,31 +121,38 @@ $s-device: 751px; //Breakpoint para dispositivos "pequenos"
   .equipe-grid h3 {
     max-width: 300px;
   }
+  .faq-lista dt {
+    margin-top: 1rem;
+    max-width: 280px;
+  }
   .faq-lista dd {
     margin-bottom: 3rem;
   }
   [data-anime="accordion"] dt::after {
     margin-left: 4px !important;
   }
-  [data-semana]::after {
-    width: 10px !important;
-    height: 10px !important;
+  .mapa {
+    max-width: 300px;
+  }
+  .dados {
+    margin-top: 1rem;
   }
   .dados li {
     @include tipo-3(12);
+  }
+  [data-semana]::after {
+    width: 10px !important;
+    height: 10px !important;
   }
   .citacao {
     top: 0px;
     left: -24px;
   }
-  .citacao p {
-    @include tipo-3(12);
-  }
-  .dados {
-    margin-top: 1rem;
-  }
   blockquote {
     width: 250px;
+  }
+  .citacao p {
+    @include tipo-3(12);
   }
   .footer {
     margin-top: 2rem;
@@ -146,25 +165,5 @@ $s-device: 751px; //Breakpoint para dispositivos "pequenos"
   }
   .redes-sociais ul {
     margin: 0 auto;
-  }
-  .mapa {
-    max-width: 300px;
-  }
-  .slide li {
-    width: 70vw !important;
-    margin: 0px 5px !important;
-  }
-  .custom-controls li {
-    width: 40px !important;
-    height: 40px !important;
-  }
-
-  .arrow-nav {
-    margin: 10px 0px !important;
-  }
-
-  .arrow-nav button {
-    width: 32px !important;
-    height: 32px !important;
   }
 }
